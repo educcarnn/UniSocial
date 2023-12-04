@@ -7,12 +7,12 @@ MySQL 8+;
 React JS 17.0.2
 
 
-Utilizei o create-react-app então deixei em repositórios separados, para ter controle dos fluxo da aplicação e dos commits, segue os links do PHP e React
+Utilizei o Create React APP então deixei em repositórios separados, para ter controle dos fluxo da aplicação e dos commits, segue os links do PHP e React. Mas este links são apenas para ver com foi o fluxo de criação, estes dois arquivos estão juntos em um só
 UniPHP: https://github.com/educcarnn/UniPHP
 UniReact: https://github.com/educcarnn/UniReact
 
 
-Eu juntei as duas aplicações em uma só pasta:
+Para executar o projeto, entre em cada pasta de arquivo, conforme a execução do projeto, primeiro do laravel e depois o react
 (Laravel)
 1 - Entre no arquivo em PHP, certifique-se de ter o PHP versão 8.2 instalado e o composer
 2 - Após isso, entre no terminal de projeto, e execute a série de comandos a seguir
@@ -22,6 +22,9 @@ composer install
 
 # Gere o link simbólico para armazenar imagens
 php artisan storage:link
+
+# Se necessário for, execute para ter permissões necessárias
+chmod -R 755 public/storage
 
 # Copie o arquivo de configuração do ambiente
 cp .env.example .env
