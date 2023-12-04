@@ -9,6 +9,8 @@ React JS 17.0.2
 
 ```
 Utilizei o Create React APP então deixei em repositórios separados, para ter controle dos fluxo da aplicação e dos commits, segue os links do PHP e React.Mas esses links são apenas para visualizar o histórico de commits. Os arquivos PHP e React estão combinados em um único repositório. OBS: Modifique os nomes das pastas para minúsculas para evitar conflitos.
+Exemplos: UniSocial para unisocial, assim por diante
+
 UniPHP: https://github.com/educcarnn/UniPHP
 UniReact: https://github.com/educcarnn/UniReact
 ```
