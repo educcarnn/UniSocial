@@ -35,7 +35,7 @@ php artisan serve
 
 # Copie o arquivo de configuração do ambiente (.env.example). 
     1° Mas isso é apenas para facilitar o processo, porque deve ser gerado o banco de dados local e importar o dump, com as seguintes orientações
-    CREATE DATABASE teste(nome do banco de dados);
+    CREATE DATABASE teste(nome do banco de dados); - Através do terminal do MySql
 
     2° Após isso, utilize algum gerenciador de banco de dados como Dbeaver, faça a conexão e import o Dump 
 
