@@ -22,7 +22,7 @@ Para executar o projeto, entre em cada pasta de arquivo, conforme a execução d
 **Entre no diretório do react e siga os passos**
 ```
 (Laravel)
-1 - Entre no arquivo em PHP, certifique-se de ter o PHP versão 8.2 instalado e o composer
+1 - Entre no arquivo em PHP, certifique-se de ter o PHP versão 8.2 instalado, composer e MySQL versão 8+
 2 - Após isso, entre no terminal de projeto, e execute a série de comandos a seguir
 ```
 **Rodar o Laravel**
@@ -30,17 +30,26 @@ Para executar o projeto, entre em cada pasta de arquivo, conforme a execução d
 # Instale as dependências do Composer
 composer install
 
+
+# Copie o arquivo de configuração do ambiente. 
+    1° Mas isso é apenas para facilitar o processo, porque deve ser gerado o banco de dados local e importar o dump, com os seguintes comandos 
+    CREATE DATABASE teste(nome do banco de dados);
+
+    2° Após isso, utilize algum gerenciador de banco de dados como Dbeaver, faça a conexão e import o Dump 
+
+    3° Antes de qualquer teste, atualize os dados do .env no laravel com suas credenciais
+
+    - Gerar a key no laravel http://localhost:8000/
+cp .env.example .env
+
+O comando a seguir não é necessário, somente em caso do import estiver com erro, mas nesse caso deve se importar o dump gerado que está neste repo
+php artisan migrate
+
 # Gere o link simbólico para armazenar imagens
 php artisan storage:link
 
 # Se necessário for, execute para ter permissões necessárias
 chmod -R 755 public/storage
-
-# Copie o arquivo de configuração do ambiente
-cp .env.example .env
-
-O comando a seguir não é necessário, somente em caso do import estiver com erro, mas nesse caso deve se importar o dump gerado que está neste repo
-php artisan migrate
 
 # Rodar o servidor
 php artisan serve
